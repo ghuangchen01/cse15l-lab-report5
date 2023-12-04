@@ -20,7 +20,7 @@ Hi, TAs and tutors, I think I need some help on debugging my calculator testing 
 <br/>
 ![Image](symptom.png)
 <br/>
-The command line I use to run the bash script is: `bash test.sh'
+The command line I use to run the bash script is: `bash test.sh`
 <br/>
 <b>My guess to the symptom:</b>
 <br/>
@@ -29,16 +29,23 @@ As my output of the java test file is the same as my expectation, it means that 
 Hi! I see your provided code and command, I believe that your guess is really close. I suggest that you try to add the command line `echo "the exit code is :"$?` before your if statement and after the 'javac' command to check if your `if statement` receive the correct exit code.
 <h2>Student Response:</h2>
 Thank you so much for the help! Here is the result with your recommended change:
-<p>New bash script:</p>
+<br/>
+<b>New bash script:</b>
+<br/>
 ![Image](changedTest.png)
-<p>New result:</p>
+<br/>
+<b>New result:</b>
+<br/>
 ![Image](newSymptom.png)
-<p>Description of the bug:</p>
+<br/>
+<b>Description of the bug:</b>
+<br/>
 After `javac` compiling, I didn't put the `if statement` to check for compile status. Instead I do `java` to run my test. After running my test, I use if statement to check for compile status. But the exit code that the `if statement` received was from `java` command which is `1` as shown. Therefore the if statement didn't print what we expected.
 <h2>At the end, all the information needed about the setup</h2>
 <b>The file & directory structure needed:</b>
 <br/>
 ![Image](dirStruct.png)
+<br/>
 <b>The contents of each file before fixing the bug</b>
 <br/>
 <p>Calculator.java:</p>
@@ -52,12 +59,10 @@ public class Calculator {
         int answer = a - b;
         return answer;
     }
-
     static int mult(int a, int b){
         int answer = a * b;
         return answer;
     }
-
     static int div(int a, int b){
         int answer = a / b;
         return answer;
