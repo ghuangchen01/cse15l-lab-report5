@@ -20,7 +20,8 @@ Hi, TAs and tutors, I think I need some help on debugging my calculator testing 
 <br/>
 ![Image](symptom.png)
 <br/>
-The command line I use to run the bash script is: `bash test.sh`
+<b>The command line I use to run the bash script is:</b>
+`bash test.sh`
 <br/>
 <b>My guess to the symptom:</b>
 <br/>
@@ -49,6 +50,7 @@ After `javac` compiling, I didn't put the `if statement` to check for compile st
 <b>The contents of each file before fixing the bug</b>
 <br/>
 <p>Calculator.java:</p>
+
 ```java
 public class Calculator {
     static int add(int a, int b){
@@ -68,8 +70,11 @@ public class Calculator {
         return answer;
     }
 
-}```
+}
+```
+
 <p>CalculatorTest.java:</p>
+
 ```java
 import static org.junit.Assert.*;
 import org.junit.*;
@@ -99,8 +104,10 @@ public void testDiv(){
     int b = 0;
     Calculator.div(a, b);
 }
-}```
+}
+```
 <p>test.sh:</p>
+
 ```java
 javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 
@@ -113,7 +120,9 @@ then
     echo "---------------------"
 else
     echo "Compile error: Fail!!"
-fi```
+fi
+```
+<br/>
 <b>The full command line (or lines) you ran to trigger the bug:</b>
 <br/>
 `bash test.sh`
