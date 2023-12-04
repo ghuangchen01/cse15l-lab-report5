@@ -33,11 +33,11 @@ Thank you so much for the help! Here is the result with your recommended change:
 <br/>
 <b>New bash script:</b>
 <br/>
-![Image](changedTest.png)
+![Image](newSymptom.png)
 <br/>
 <b>New result:</b>
 <br/>
-![Image](newSymptom.png)
+![Image](changedTest.png)
 <br/>
 <b>Description of the bug:</b>
 <br/>
@@ -126,7 +126,8 @@ fi
 <b>The full command line (or lines) you ran to trigger the bug:</b>
 <br/>
 `bash test.sh`
-<b>A description of what to edit to fix the bug</b>
+<br/>
+<b>A description of what to edit to fix the bug:</b>
 <br/>
 <p>After determine where the bug is. I can make changes to fix the bug. The first thing is find where should the if statement goes, which should be next to the `javac` command. Next step is to cut the whole `if statement` and paste next to the `javac` command.</p>
 <p>After fixing the bash script file, it should look like this:</p>
