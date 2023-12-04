@@ -4,11 +4,15 @@ Hi, TAs and tutors, I think I need some help on debugging my calculator testing 
 Here are my java codes:
 Calculator.java:
 ![Image](caljava.png)
+<br/>
 CalculatorTest.java:
 ![Image](caltest.png)
+<br/>
 Here is my bash script:
-![Image](test.sh.png)
+![Image](testsh.png)
+<br/>
 Here is my terminal result with bug:
 ![Image](symptom.png)
+<br/>
 The command line I use to run the bash script is:
 `bash test.sh'
