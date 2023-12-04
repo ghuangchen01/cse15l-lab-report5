@@ -47,7 +47,7 @@ After `javac` compiling, I didn't put the `if statement` to check for compile st
 <br/>
 ![Image](dirStruct.png)
 <br/>
-<b>The contents of each file before fixing the bug</b>
+<b>The contents of each file before fixing the bug:</b>
 <br/>
 <p>Calculator.java:</p>
 
